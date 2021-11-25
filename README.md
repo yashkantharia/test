@@ -1,15 +1,21 @@
-# test
+#test
 
-For DTER File
-Sub_Fund_Code	Scheme_Name	  Date_Format	DTER
-
-
-For Brokerage
-Category	MONTH	Schemes	Scheme_Category	 Scheme_Code	    Plan_Code	Day_Oneto3Years	FourthYear_onwards	B30_Incentive
+https://vbv6kb6a31.execute-api.ap-south-1.amazonaws.com/default/pds_refresh
 
 
-For IFABROKDLRCATG
-Month	BROK_DLR_CODE	CONS_CODE	BROK_DLR_NAME	BROK_DLR_CATG	DISTRIBUTOR_CATEGORY
+import requests
+import json
 
+url = "https://vbv6kb6a31.execute-api.ap-south-1.amazonaws.com/default/pds_refresh"
 
-![image](https://user-images.githubusercontent.com/26202363/142412971-13b080d3-a3ed-4318-9b2a-febca2b6a14f.png)
+payload = json.dumps({
+  "pds_name": "test"
+})
+headers = {
+  'x-api-key': 'EYamjoG8NW3YNTI6u1nPc3VbCL7fNLUn4cMO8Uq1',
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("GET", url, headers=headers, data=payload)
+
+print(response.text)
