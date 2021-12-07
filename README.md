@@ -21,4 +21,4 @@ print(response.text)
 
 "idfc_idfc_Idfc_Azure"."idfc_idfc"."GS_AUM_Acti_Target_Weekly_Historic"
 
-"idfc_idfc_Idfc_Azure"."idfc_idfc"."All_KPIs_Actuals_Weekly_Historic"
+"idfc_idfc_Idfc_Azure"."idfc_idfc"."All_KPIs_Actuals_Weekly_Delta"
