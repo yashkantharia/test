@@ -1,13 +1,12 @@
 import requests
 import json
 
-url = "https://vbv6kb6a31.execute-api.ap-south-1.amazonaws.com/default/pds_refresh"
+url = "https://idfcrefreshrelay.azurewebsites.net:443/api/swagger_refresh/triggers/manual/invoke?api-version=2020-05-01-preview&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=dmxbUHgTrh9rRpjtPeWkCT6Wwubda56bR22kLdZe8CE"
 
 payload = json.dumps({
   "pds_name": "test"
 })
 headers = {
-  'x-api-key': 'EYamjoG8NW3YNTI6u1nPc3VbCL7fNLUn4cMO8Uq1',
   'Content-Type': 'application/json'
 }
 
