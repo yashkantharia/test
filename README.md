@@ -6,3 +6,5 @@ Columns in rating:
 
 
 "idfc_idfc_Idfc_Azure"."idfc_idfc"."All_KPIs_Actuals_Weekly_Delta"
+
+"idfc_idfc_Idfc_Azure"."idfc_idfc"."Sharing_ratio_Scheme_mapping"
